@@ -1,11 +1,18 @@
-# SPSS / PSPP
+# SPSS / PSPP (nikoleesg fork)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/tiamo/spss.svg?style=flat-square)](https://packagist.org/packages/tiamo/spss)
-[![Build Status](https://travis-ci.org/tiamo/spss.svg?branch=master)](https://travis-ci.org/tiamo/spss)
-[![Total Downloads](https://img.shields.io/packagist/dt/tiamo/spss.svg?style=flat-square)](https://packagist.org/packages/tiamo/spss)
-[![License](https://poser.pugx.org/tiamo/spss/license)](https://packagist.org/packages/tiamo/spss)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/nikoleesg/spss.svg?style=flat-square)](https://packagist.org/packages/nikoleesg/spss)
+[![Total Downloads](https://img.shields.io/packagist/dt/nikoleesg/spss.svg?style=flat-square)](https://packagist.org/packages/nikoleesg/spss)
+[![License](https://poser.pugx.org/nikoleesg/spss/license)](https://packagist.org/packages/nikoleesg/spss)
 
 A PHP library for reading and writing SPSS / PSPP .sav data files.
+
+## Fork notice
+
+This package is maintained as an independent fork of `tiamo/spss`.
+
+- Fork baseline: upstream `tiamo/spss` tag `2.2.2`
+- Fork package name: `nikoleesg/spss`
+- Fork runtime baseline: PHP `8.0+`
 
 ## Requirements
 
@@ -16,7 +23,7 @@ A PHP library for reading and writing SPSS / PSPP .sav data files.
 ## Installation
 
 ```
-composer require tiamo/spss
+composer require nikoleesg/spss
 ```
 
 ## Usage

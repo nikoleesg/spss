@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.0
+
+2026-03
+
++ Initial release of the `nikoleesg/spss` fork.
++ Forked from upstream `tiamo/spss` at tag `2.2.2`.
++ Package renamed to `nikoleesg/spss` for independent publishing.
++ Runtime baseline raised to PHP 8.0+.
++ Development toolchain updated for modern PHP (PHPUnit 9, php-cs-fixer 3, PHPStan 1, Rector 1).
+
 ## 2.2.2
 
 2021-01
