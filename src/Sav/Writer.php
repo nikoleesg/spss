@@ -61,13 +61,36 @@ class Writer
     }
 
     /**
-     * @param array $data
-     * @param string $file
+     * Backward compatible signature:
+     * - createInFile(array $data, string $file)
+     * - createInFile(string $file, array $data = [])
+     *
+     * @param mixed $fileOrData
+     * @param mixed $fileOrData2
      *
      * @return Writer
      */
-    public static function createInFile($data = [], $file)
+    public static function createInFile($fileOrData, $fileOrData2 = null)
     {
+        if (
+            \is_array($fileOrData)
+            && \is_string($fileOrData2)
+        ) {
+            $data = $fileOrData;
+            $file = $fileOrData2;
+        } elseif (
+            \is_string($fileOrData)
+            && (
+                null === $fileOrData2
+                || \is_array($fileOrData2)
+            )
+        ) {
+            $file = $fileOrData;
+            $data = \is_array($fileOrData2) ? $fileOrData2 : [];
+        } else {
+            throw new \InvalidArgumentException('Invalid arguments for createInFile().');
+        }
+
         return new self($data, Buffer::factory(fopen($file, 'wb+')));
     }
 

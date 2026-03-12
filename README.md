@@ -9,7 +9,7 @@ A PHP library for reading and writing SPSS / PSPP .sav data files.
 
 ## Requirements
 
-+ php >= 5.6
++ php >= 8.0
 + mbstring extension
 + bcmath extension
 
